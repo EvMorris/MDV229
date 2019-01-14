@@ -10,6 +10,8 @@ namespace MorrisEvan_Integrative2
     {
         static void Main(string[] args)
         {
+            Code code = new Code();
+            Console.ReadKey();
         }
     }
 }

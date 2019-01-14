@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace MorrisEvan_Integrative2
 {
@@ -10,7 +11,8 @@ namespace MorrisEvan_Integrative2
     {
         public Code()
         {
-            Init();
+            GetData();
+            //Init();
         }
 
 
@@ -72,5 +74,49 @@ namespace MorrisEvan_Integrative2
         {
 
         }
+
+        private void GetData()
+        {
+            Console.WriteLine("Start\n");
+
+            // MySQL Database Connection String
+            string cs = @"server=192.168.0.10;userid=root;password=root;database=example_1809;port=8889";
+
+            // Declare a MySQL Connection
+            MySqlConnection conn = null;
+
+            try
+            {
+                // Open a connection to MySQL
+                conn = new MySqlConnection(cs);
+                conn.Open();
+
+                // Form SQL Statement
+                string stm = "SELECT VERSION()";
+
+                // Prepare SQL Statement
+                MySqlCommand cmd = new MySqlCommand(stm, conn);
+
+                // Execute SQL Statement and Convert Results to a String
+                string version = Convert.ToString(cmd.ExecuteScalar());
+
+                // Output Results
+                Console.WriteLine("MySQL version : {0}", version);
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error: {0}", ex.ToString());
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+            Console.WriteLine("Done");
+        }
     }
 }
+
