@@ -7,13 +7,12 @@ using MySql.Data.MySqlClient;
 
 namespace MorrisEvan_Integrative2
 {
-    //hello 
     class Code
     {
         public Code()
         {
-           // GetData();
-            Init();
+            GetData();
+            //Init();
         }
 
 
@@ -58,10 +57,7 @@ namespace MorrisEvan_Integrative2
 
         private void StarRating()
         {
-            Console.WriteLine("Hello Amin, how would you like to sort the data?");
-            Menu starMenu = new Menu("List restauraunts alphabetically.", "List retauraunts reverse alphabeticallly", "Sort restauraunts from best to worst.", "Sort restauraunts from worst to best");
-            starMenu.Title = "5-Star rating system.";
-            starMenu.Display();
+
         }
 
         private void BarGraph()

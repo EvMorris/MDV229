@@ -1,0 +1,9 @@
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\bin\Debug\MorrisEvan_Integrative2.exe.config
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\bin\Debug\MorrisEvan_Integrative2.exe
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\bin\Debug\MorrisEvan_Integrative2.pdb
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\obj\Debug\MorrisEvan_Integrative2.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\obj\Debug\MorrisEvan_Integrative2.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\obj\Debug\MorrisEvan_Integrative2.exe
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\obj\Debug\MorrisEvan_Integrative2.pdb
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\bin\Debug\MySql.Data.dll
+\\vmware-host\Shared Folders\Desktop\MDV229\MorrisEvan_Integrative2\MorrisEvan_Integrative2\obj\Debug\MorrisEvan_Integrative2.csproj.CopyComplete
