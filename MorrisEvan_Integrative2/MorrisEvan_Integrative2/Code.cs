@@ -10,9 +10,13 @@ namespace MorrisEvan_Integrative2
     //hello 
     class Code
     {
+
+        public string data { get; set; }
+
         public Code()
         {
-           // GetData();
+            
+
             Init();
         }
 
@@ -53,15 +57,42 @@ namespace MorrisEvan_Integrative2
 
         private void ConToJson()
         {
-
+            Data data = new Data();
+            data.PullAll();
         }
 
         private void StarRating()
         {
-            Console.WriteLine("Hello Amin, how would you like to sort the data?");
-            Menu starMenu = new Menu("List restauraunts alphabetically.", "List retauraunts reverse alphabeticallly", "Sort restauraunts from best to worst.", "Sort restauraunts from worst to best");
+            Console.WriteLine("Hello Admin, how would you like to sort the data?");
+            Menu starMenu = new Menu("List restauraunts alphabetically.", "List retauraunts reverse alphabeticallly.", "Sort restauraunts from best to worst.", "Sort restauraunts from worst to best.", "Exit.");
             starMenu.Title = "5-Star rating system.";
             starMenu.Display();
+            SubSelect();
+        }
+
+        private void SubSelect()
+        {
+            switch (Utility.ValidateInt("Make selection 1-5"))
+            {
+                case 1:
+                    ConToJson();
+                    break;
+                case 2:
+                    StarRating();
+                    break;
+                case 3:
+                    BarGraph();
+                    break;
+                case 4:
+                    CardGame();
+                    break;
+                case 5:
+                    Exit();
+                    break;
+                default:
+                    Console.WriteLine("Select a valid option.");
+                    break;
+            }
         }
 
         private void BarGraph()
@@ -79,48 +110,49 @@ namespace MorrisEvan_Integrative2
 
         }
 
-        private void GetData()
-        {
-            Console.WriteLine("Start\n");
+        //private void GetData()
+        //{
+        //    Console.WriteLine("Start\n");
 
-            // MySQL Database Connection String
-            string cs = @"server=192.168.0.10;userid=root;password=root;database=example_1809;port=8889";
+        //    // MySQL Database Connection String
+        //    string cs = @"server=10.63.54.75;userid=realUser;password=password;database=ILA1;port=8889";
 
-            // Declare a MySQL Connection
-            MySqlConnection conn = null;
+        //    // Declare a MySQL Connection
+        //    MySqlConnection conn = null;
 
-            try
-            {
-                // Open a connection to MySQL
-                conn = new MySqlConnection(cs);
-                conn.Open();
+        //    try
+        //    {
+        //        // Open a connection to MySQL
+        //        conn = new MySqlConnection(cs);
+        //        conn.Open();
 
-                // Form SQL Statement
-                string stm = "SELECT VERSION()";
+        //        // Form SQL Statement
+        //        string stm = "SELECT * FROM RestaurantReviews;";
 
-                // Prepare SQL Statement
-                MySqlCommand cmd = new MySqlCommand(stm, conn);
+        //        // Prepare SQL Statement
+        //        MySqlCommand cmd = new MySqlCommand(stm, conn);
 
-                // Execute SQL Statement and Convert Results to a String
-                string version = Convert.ToString(cmd.ExecuteScalar());
+        //        // Execute SQL Statement and Convert Results to a String
+        //        string version = Convert.ToString(cmd.ExecuteScalar());
 
-                // Output Results
-                Console.WriteLine("MySQL version : {0}", version);
+        //        // Output Results
+        //        Console.WriteLine("MySQL version : {0}", version);
 
-            }
-            catch (MySqlException ex)
-            {
-                Console.WriteLine("Error: {0}", ex.ToString());
-            }
-            finally
-            {
-                if (conn != null)
-                {
-                    conn.Close();
-                }
-            }
-            Console.WriteLine("Done");
-        }
+        //    }
+        //    catch (MySqlException ex)
+        //    {
+        //        Console.WriteLine("Error: {0}", ex.ToString());
+        //    }
+        //    finally
+        //    {
+        //        if (conn != null)
+        //        {
+        //            conn.Close();
+        //        }
+        //    }
+            
+        //    Console.WriteLine("Done");
+        //}
     }
 }
 
