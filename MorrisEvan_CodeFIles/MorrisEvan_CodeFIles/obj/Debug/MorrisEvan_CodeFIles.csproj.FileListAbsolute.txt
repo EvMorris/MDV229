@@ -1,0 +1,9 @@
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\bin\Debug\MorrisEvan_CodeFIles.exe.config
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\bin\Debug\MorrisEvan_CodeFIles.exe
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\bin\Debug\MorrisEvan_CodeFIles.pdb
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\obj\Debug\MorrisEvan_CodeFIles.csprojResolveAssemblyReference.cache
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\obj\Debug\MorrisEvan_CodeFIles.csproj.CoreCompileInputs.cache
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\obj\Debug\MorrisEvan_CodeFIles.exe
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\obj\Debug\MorrisEvan_CodeFIles.pdb
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\bin\Debug\MySql.Data.dll
+c:\users\evan morris\source\repos\MorrisEvan_CodeFIles\MorrisEvan_CodeFIles\obj\Debug\MorrisEvan_CodeFIles.csproj.CopyComplete
